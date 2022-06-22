@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+*, body, h1, p, img,button,input {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.555);
+    
+}
+.header {
+    padding: 10px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 15px;
+    background-color: #009BBE;
+    opacity: 0.8;
+    align-items: center;
+}
+.header img {
+    margin-left: 1.5rem;
+}
+
+.header h1 {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.content {
+    width: 900px;
+    height: 600px;
+    background-image: url(../img/pegasus-horse.png);
+    background-repeat: no-repeat;
+    background-position: 10% 80%, top;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+/*FIM HEADER*/
+.content h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+.campoDados{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+ input {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    background-color: #009BBE;
+    border-radius: 9px;
+    width: 200px;
+    align-self: center;
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+}
+
+#campoDados {
+    background-color: rgb(255, 255, 255);
+    opacity:initial;
+}
+input:hover{
+    opacity: 0.7;
+    
+}
+
+input:active {
+    opacity: 0.2;
+   
+}
+.campoDados input::placeholder {
+    text-align: center;
+}
+
+.btnsDados {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    max-width: 100%;
+    column-gap: 10px;
+
+}
+
+.btnsDados input {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.btnsDados input:first-child {
+    justify-self: end;
+}
+
+/*fim btns*/
+.dadosProcessados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    color: #fff;
+   
+}
+.entradaDados {
+    padding: 20px;
+}
+
+.entradaDados ol {
+    max-height: 285px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.entradaDados li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Merriweather', serif;
+}
+.entradaDados button {
+    padding: 5px;
+    border-radius: 9px;
+    border: none;
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+    background-color: #009BBE;
+    border: 2px solid #ffffff;
+}
+.entradaDados button:hover{
+    opacity: 0.7;
+}
+
+.entradaDados h1 {
+    grid-column: span 2;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+.saidaDados {
+    padding: 20px;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.saidaDados h1 {
+    font-family: 'Merriweather', serif;
+}
+
+.saidaDados p {
+    font-family: 'Merriweather', serif;
+}
+
+.saidaDados p:nth-of-type(2){
+    margin: 10px 0 10px 0;
+}
+
+.saidaDados input {
+    width:150px;
+    margin-top: 20px;
+    align-self: center;
+    font-family: 'Merriweather', serif;
+}
