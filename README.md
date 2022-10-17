@@ -2,7 +2,7 @@
 
 #Processador de Temperaturas
 
-#nesse projeto mostrei varios de meus conhecimentos com as linguagens HTML/CSS/JavaScript puro.
+#nesse projeto mostrei varios de meus conhecimentos com as linguagens HTML/CSS/JavaScript
 
 #Resumo da aplicação.
 
